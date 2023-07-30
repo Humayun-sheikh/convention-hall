@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,125 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
     ">
 </head>
+
 <body>
+
+    <!-- Off canvas navigation bar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-success" href="#">Welcome to Asian Convention Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Choose your Option</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Venues
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Wedding</a></li>
+                                <li><a class="dropdown-item" href="#">Conference</a></li>
+                                <li><a class="dropdown-item" href="#">Sublet</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slide Bar section  -->
+
+    <section>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel col-md-12">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/convention-1.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h5 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 2em; color: olivedrab;">CURATED MEETINGS AND EVENTS
+                        </h5>
+                        <p class=""
+                            style="font-family: 'Times New Roman', Times, serif; font-size: 1.5rem; color:white; font-weight: bold;">
+                            Elevate your next event with the glamour and sophistication of our Art Deco-inspired event
+                            spaces. Located in the limestone Heritage Wing of our seaside hotel, our venues offer
+                            breathtaking views of the Sorrento foreshore and stylish furnishings bathed in natural light.
+                        </p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/convention-2.jpg" class="d-block w-100 opacity-50 " alt="...">
+                    <div class="carousel-caption d-none d-md-block text-white">
+                        <h5 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 2em; color: rgb(75, 20, 20);">CURATED MEETINGS AND EVENTS
+                        </h5>
+                        <p class=""
+                            style="font-family: 'Times New Roman', Times, serif; font-size: 1.5rem; color:rgb(75, 20, 20);">
+                            Elevate your next event with the glamour and sophistication of our Art Deco-inspired event
+                            spaces. Located in the limestone Heritage Wing of our seaside hotel, our venues offer
+                            breathtaking views of the Sorrento foreshore and stylish furnishings bathed in natural light.
+                        </p>
+                        <button class="btn btn-primary">Order Now</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/convention-3.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block text-secondary" style="">
+                        <h5
+                            style="font-weight: bold; font-family: 'Times New Roman', Times, serif; font-size: 2em; color: rgb(75, 20, 20);">
+                            "'Til death do us part" -- Everything you need to know about these traditional, life-long
+                            unions. </h5>
+                        <p class="text-dark" style="font-size: 1.5rem;">In recent years, thousands of couples have chosen
+                            beautiful locations in the Dhaka as they and their families and friends travel here to solemnize
+                            their marriages or renew their wedding vows. </p>
+                        <button class="btn btn-primary">Order Now</button>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     
-
-
+    </section>
 
 
 
@@ -27,4 +143,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
     "></script>
 </body>
+
 </html>
